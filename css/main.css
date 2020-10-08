@@ -37,7 +37,24 @@ button {
 
 .nav-list-link.current {
   color: #2196f3;
+  display: block;
+  border-bottom: 2px solid #2196f3;
+  border-radius: 2px;
 }
+
+/* .nav-list {
+  color: #2196f3;
+  border-bottom: 20px solid #2196f3;
+  border-radius: 2px;
+} */
+
+/* .nav-list-link::after.current {
+  color: #2196f3;
+  display: flex;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+} */
 
 .list {
   list-style: none;
@@ -390,6 +407,28 @@ width: 20px;
 height: 20px;
 }
 
+.doing-discription {
+  Width: 370px;
+  Height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doing-text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
 /*  ============ End doing + team  ============ */
 
 /*  ============ customers  ============ */
@@ -594,6 +633,11 @@ margin-bottom: 20px;
   border: 1px solid rgba(238, 238, 238, 1);
 }
 
+.project-photo {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-project-list:hover,
 .portfolio-project-list:focus {
 border: 1px solid #EEEEEE;
@@ -601,10 +645,17 @@ box-sizing: border-box;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-project-list:hover .portfolio-project-hover,
+.portfolio-project-list:focus .portfolio-project-hover {
+transform: translateY(0);
+}
+
+
 .portfolio-block {
   width: 370px;
   height: 110px;
   padding: 20px 24px 20px;
+
 }
 
 .portfolio-project-title {
@@ -624,4 +675,30 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   letter-spacing: 0.03em;
   color: var(--text-theme-color);
 }
+
+.portfolio-project-hover {
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 63px 24px 63px;
+
+position: absolute;
+top: 0;
+left: 0;
+transform: translateY(100%);
+transition: all 500ms linear;
+}
+
+.project-text {
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+color: #FFFFFF;
+letter-spacing: 3%;
+}
+
 /*  ============ End portfolio-project  ============ */
