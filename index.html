@@ -58,7 +58,7 @@
         <section class="main-section">
           <div class="container main-title">
               <h1 class="main-section-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="main-section-button">Заказать услугу</button>
+            <button type="button" class="main-section-button" data-modal-open>Заказать услугу</button>
           </div>
         </section>
        <section class="benefits">
@@ -406,5 +406,14 @@
       </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
